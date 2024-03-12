@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendy Treasures ID</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logonobg.png" alt="logo"></a>
+        </nav>
+        <h1>Pembayaran</h1>
+    </section>
+
+<!----------------------------------------Pembayaran---------------------------------------->
+
+<section class="location">
+    <img src="images/bg3.png" alt="">
+</section>
+
+<section class="facilities">
+    <h1>Rp.425.000</h1>
+    <p>Silahkan transfer dengan jumlah sesuai dengan yang di atas.<br>Semua bank dengan atas nama MUHAMAD REZA FATURAHMAN</p>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <img src="images/BRI.png" alt="">
+                <span>
+                    <div class="copy-text01">
+                        <input readonly="text" class="text01" value="088501038485537">
+                        <button class="button01"><i class="fa fa-clone"></i></button>
+                    </div>
+                </span>
+            </div>
+            <div>
+                <img src="images/BSI.png" alt="">
+                <span>
+                    <div class="copy-text02">
+                        <input readonly="text" class="text02" value="8709948170">
+                        <button class="button02"><i class="fa fa-clone"></i></button>
+                    </div>
+                </span>
+            </div>
+            <div>
+                <img src="images/MANDIRI.png" alt="">
+                <span>
+                    <div class="copy-text03">
+                        <input readonly="text" class="text03" value="1310021546959">
+                        <button class="button03"><i class="fa fa-clone"></i></button>
+                    </div>
+                </span>
+            </div>
+            <div>
+                <img src="images/BNI.png" alt="">
+                <span>
+                    <div class="copy-text04">
+                        <input readonly="text" class="text04" value="1824019882">
+                        <button class="button04"><i class="fa fa-clone"></i></button>
+                    </div>
+                </span>
+            </div>
+            <div>
+                <img src="images/BCA.png" alt="">
+                <span>
+                    <div class="copy-text05">
+                        <input readonly="text" class="text05" value="8470737078">
+                        <button class="button05"><i class="fa fa-clone"></i></button>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                Produk
+                <input readonly name="produk" value="Hose Nozzle Spray" required>
+                Nama lengkap
+                <input type="text" name="nama" placeholder="Masukan nama" required>
+                Nomor WhatsApp
+                <input type="text" name="nomor" placeholder="0812 3456 7890" required>
+                Bukti Transfer
+                <input type="file" name="bukti" placeholder="Bukti Transfer" required>
+                Alamat
+                <textarea rows="8" name="alamat" placeholder="Masukan alamat lengkap disini" required></textarea>
+                <button type="submit" class="hero-btn red-btn">KIRIM</button>
+            </form>
+        </div>
+    </div>
+
+<!----------------------------------------JavaScript Button---------------------------------------->
+
+
+
+<!----------------------------------------JavaScript BRI---------------------------------------->
+
+<script>
+    let copyText01 = document.querySelector(".copy-text01")
+    copyText01.querySelector("button").addEventListener("click",function(){
+        let input = copyText01.querySelector("input.text01");
+        input.select();
+        document.execCommand("copy");
+        copyText01.classList.add("active");
+        window.getSelection().removeAllRanges();
+        setTimeout(function(){
+            copyText01.classList.remove("active")
+        },2500);
+    });
+</script>
+
+<!----------------------------------------JavaScript BSI---------------------------------------->
+
+<script>
+    let copyText02 = document.querySelector(".copy-text02")
+    copyText02.querySelector("button").addEventListener("click",function(){
+        let input = copyText02.querySelector("input.text02");
+        input.select();
+        document.execCommand("copy");
+        copyText02.classList.add("active");
+        window.getSelection().removeAllRanges();
+        setTimeout(function(){
+            copyText02.classList.remove("active")
+        },2500);
+    });
+</script>
+
+<!----------------------------------------JavaScript MANDIRI---------------------------------------->
+
+<script>
+    let copyText03 = document.querySelector(".copy-text03")
+    copyText03.querySelector("button").addEventListener("click",function(){
+        let input = copyText03.querySelector("input.text03");
+        input.select();
+        document.execCommand("copy");
+        copyText03.classList.add("active");
+        window.getSelection().removeAllRanges();
+        setTimeout(function(){
+            copyText03.classList.remove("active")
+        },2500);
+    });
+</script>
+
+<!----------------------------------------JavaScript BCA---------------------------------------->
+
+<script>
+    let copyText04 = document.querySelector(".copy-text04")
+    copyText04.querySelector("button").addEventListener("click",function(){
+        let input = copyText04.querySelector("input.text04");
+        input.select();
+        document.execCommand("copy");
+        copyText04.classList.add("active");
+        window.getSelection().removeAllRanges();
+        setTimeout(function(){
+            copyText04.classList.remove("active")
+        },2500);
+    });
+</script>
+
+<!----------------------------------------JavaScript BNI---------------------------------------->
+
+<script>
+    let copyText05 = document.querySelector(".copy-text05")
+    copyText05.querySelector("button").addEventListener("click",function(){
+        let input = copyText05.querySelector("input.text05");
+        input.select();
+        document.execCommand("copy");
+        copyText05.classList.add("active");
+        window.getSelection().removeAllRanges();
+        setTimeout(function(){
+            copyText05.classList.remove("active")
+        },2500);
+    });
+</script>
+</section>
+
+<!----------------------------------------Footer---------------------------------------->
+
+<section class="footer">
+    <h4>Jasa pengiriman</h4>
+    <img src="images/jne.png" alt="">
+    <img src="images/sicepat.png" alt="">
+    <img src="images/anteraja.png" alt="">
+    <img src="images/jnt.png" alt="">
+    <img src="images/ninja.png" alt="">
+    <img src="images/id.png" alt="">
+    <img src="images/shopee.png" alt="">
+</section>
+
+<section class="footer">
+    <div class="icons">
+        <a href="https://wa.me/6282126681642"><i class="fa fa-whatsapp"></i></a>
+        <a href="https://t.me/TrendyTreasuresID"><i class="fa fa-telegram"></i></a>
+    </div>
+    <p>@Trendy Treasures ID 2024</p>
+</section>
+
+</body>
+</html>
